@@ -16,6 +16,3 @@ search.bilibili.com###i_cecream > div.search-layout.clearfix > div:nth-child(2) 
 
 !主页关键词
 search.bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.feed-card:has(h3.bili-video-card__info--tit[title*="一口气"])
-
-
-bilibili.com###i_cecream > div.bili-feed4:last-child > div.bili-header.large-header:first-child > div.bili-header__bar:first-child > ul.right-entry:last-child > li.v-popover-wrap:nth-child(4) > div.v-popover.is-bottom:last-child > div.v-popover-content > div.dynamic-panel-popover > div.header-tabs-panel__content:last-child > div.header-content-panel:first-child > div.dynamic-video > a.dynamic-video-item:has(div.user-name[data-user-id="22723665"])
