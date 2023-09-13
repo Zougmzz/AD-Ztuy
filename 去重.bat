@@ -74,7 +74,7 @@ for /f "delims=" %%a in (%shidFile%) do (
     echo https://space.bilibili.com/!ddidLine!>> "%schaFile%"
 )
 
-echo 数字组已写入审查.txt文件.
+echo UID已写入审查.txt文件.
 
 endlocal
 

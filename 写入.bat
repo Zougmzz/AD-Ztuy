@@ -50,14 +50,14 @@ type nul > "%adzFile%"
 rem 遍历UID名单.txt文件的每一行，将每一行的数字组替换为指定的形式并追加到AD-Ztuy.txt文件
 for /f "delims=" %%a in (%uidFile%) do (
     set "uid=%%a"
-    set "line=search.bilibili.com###i_cecream ^> div.search-layout.clearfix ^> div:nth-child(2) ^> div.search-content--gray.search-content:last-child ^> div.search-page-wrapper ^> div.search-page.search-page-all ^> div ^> div.video.i_wrapper.search-all-list:nth-child(2) ^> div.video-list.row ^> div.col_3.col_xs_1_5.col_md_2.col_xl_1_7.mb_x40:has(a.bili-video-card__info--owner[href=\"!uid!\"])"
+    set "line=search.bilibili.com###i_cecream ^> div.search-layout.clearfix ^> div:nth-child(2) ^> div.search-content--gray.search-content:last-child ^> div.search-page-wrapper ^> div.search-page.search-page-all ^> div ^> div.video.i_wrapper.search-all-list:nth-child(2) ^> div.video-list.row ^> div.col_3.col_xs_1_5.col_md_2.col_xl_1_7.mb_x40:has(a.bili-video-card__info--owner[href*="!uid!"])"
     echo !line!>> "%adzFile%"
-    set "line=search.bilibili.com###i_cecream ^> div.bili-feed4:last-child ^> main.bili-feed4-layout:nth-child(3) ^> div.feed2:last-child ^> div.recommended-container_floor-aside-no-banner ^> div.no-banner-container.is-version8:nth-child(2) ^> div.feed-card:has(a.bili-video-card__info--owner[href=\"!uid!\"])"
+    set "line=bilibili.com###i_cecream ^> div.bili-feed4:last-child ^> main.bili-feed4-layout:nth-child(3) ^> div.feed2:last-child ^> div.recommended-container_floor-aside-no-banner ^> div.no-banner-container.is-version8:nth-child(2) ^> div.feed-card:has(a.bili-video-card__info--owner[href*="!uid!"])"
     echo !line!>> "%adzFile%"
-    set "line=bilibili.com###comment ^> div.comment ^> div.bili-comment.browser-pc ^> div.comment-container ^> div.reply-warp:last-child ^> div.reply-list:last-child ^> div.reply-item:has(div.user-name[data-user-id=\"!uid!\"])"
+    set "line=bilibili.com###comment ^> div.comment ^> div.bili-comment.browser-pc ^> div.comment-container ^> div.reply-warp:last-child ^> div.reply-list:last-child ^> div.reply-item:has(div.user-name[data-user-id*="!uid!"])"
     echo !line!>> "%adzFile%"
 )
 
-echo 数字组已写入AD-Ztuy.txt文件.
+echo UID已写入AD-Ztuy.txt文件.
 
 endlocal
