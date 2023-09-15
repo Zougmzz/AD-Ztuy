@@ -1,6 +1,6 @@
 !B站首页广告
-bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.feed-card:nth-child
-bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.bili-video-card.is-rcmd:nth-chil
+bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.feed-card:has(.bili-video-card__info--ad)
+bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.bili-video-card.is-rcmd:has(.bili-video-card__info--ad)
 !UID屏蔽
 search.bilibili.com###i_cecream > div.search-layout.clearfix > div:nth-child(2) > div.search-content--gray.search-content:last-child > div.search-page-wrapper > div.search-page.search-page-all > div > div.video.i_wrapper.search-all-list:nth-child(2) > div.video-list.row > div.col_3.col_xs_1_5.col_md_2.col_xl_1_7.mb_x40:has(a.bili-video-card__info--owner[href*="636718923"])
 bilibili.com###i_cecream > div.bili-feed4:last-child > main.bili-feed4-layout:nth-child(3) > div.feed2:last-child > div.recommended-container_floor-aside-no-banner > div.no-banner-container.is-version8:nth-child(2) > div.feed-card:has(a.bili-video-card__info--owner[href*="636718923"])
